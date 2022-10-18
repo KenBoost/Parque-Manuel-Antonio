@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque Nacional Manuel Antonio</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <!--SCRIPTS-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <script src="Javascript/JavaCInfo.js"></script>
+    <script src="Javascript/Clima.js"></script>
+    <link href="EstiloContactoInfo.css" rel="stylesheet" type="text/css" />
+    <!------------------>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="AcercaDe.html">Acerca de</a>
+            <a href="Galeria.html">Galería</a>
+            <a href="ContactoInfo.html">Contacto/Informacion</a>
+            <a href="Autor.html">Autor</a>
+        </nav>
+        <br>
+        <section class="textos-header">
+            <h1>Parque Nacional Manuel Antonio | Costa Rica</h1>
+            <h2>Un puente entre el Océano y la Tierra</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; 
+                width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor info">
+            <!--Seccion que contiene la parte de la Informacion-->
+            <h2 class="titulo">Datos Importantes</h2>
+            <div class="contenedor-informacion">
+                <div class="contenido-textos">
+                    <h3 id="h3-info">El horario de atención es de 7 am a 4 pm todos los días del año, excepto los lunes,
+                        incluidos
+                        todos los días festivos.</h3>
+                    <br>
+                    <p>El costo de admisión es de $18.08 para extranjeros, o ¢1808 colones para adultos residentes o
+                        costarricenses,
+                        los niños de 2 a 11 años extranjeros pagan $5.65 y los niños nacionales pagan ¢500 (6 a 11
+                        años).
+                        Los boletos se pueden comprar en la entrada del parque con tarjeta de crédito o débito, o en
+                        línea <a href="https://parques.coopealianza.fi.cr/">AQUI</a>.
+                    </p>
+                    <br>
+                    <p>Visitas Guiadas disponibles a $ 51 para adultos, $ 35 para niños y $38 para nacionales o
+                        residentes.
+                        Los tours privados están disponibles a $ 71 para adultos y $ 55 para niños.
+                        Todas las visitas guiadas incluyen transporte de ida y vuelta desde los hoteles y casas de
+                        vacaciones de MA / Quepos,
+                        tarifa de entrada, guías bilingües certificados con telescopios de alta tecnología, 2.5-3 horas
+                        de visita guiada,
+                        incluido el tiempo para pasar en las playas. Puede optar por pasar el resto del día dentro del
+                        parque,
+                        pero es posible que necesite tomar el autobús o un taxi de regreso a su hotel.</p>
+                    <br>
+                    <p>Para aquellos que visitan el parque durante Navidad, Año Nuevo y Semana Santa, asegúrese de
+                        llegar lo más temprano posible
+                        (7-8 am) Para poder entrar. Durante la temporada alta (Medio diciembre a fin de abril) se
+                        recomienda visitar el parque por la tarde
+                        (12-4 pm) Como hay menos visitantes durante ese tiempo.</p>
+                    <br>
+                    <h3 id="h3-info">Algunos datos relevantes</h3>
+                    <br><br>
+                    <div class="contenido-lista-rest">
+                        <div class="lista-textos">
+                            <ul>
+                                <li type="disc"> <span>Restricciones de alimentos:</span>
+                                    Sodas y aguas son permitidas, prohibidas las bebidas alcohólicas, se permiten solo
+                                    frutas o semillas,
+                                    Esto es para mantener limpio el ambiente</li>
+                                <br><br>
+                                <li type="disc"> <span>Distancia desde San José:</span> 165 Kilometros</li>
+                                <br><br>
+                                <li type="disc"> <span>Temporada Seca:</span> De Diciembre hasta Abril</li>
+                                <br><br>
+                                <li type="disc"> <span>Tamaño:</span> 1950 hectáreas de tierra y 55000 hectáreas marinas
+                                </li>
+                                <br><br>
+                                <li type="disc"> <span>Dificultad:</span> Fácil, hay un sendero accesible para
+                                    discapacitados</li>
+                            </ul>
+                        </div>
+                        <!--TABLA PARA EL REST-->
+                        <div class="tabla-rest">
+                            <table cellspacing="8" class="tabla" border="1">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p>Clima en el Parque</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="icono"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="pais"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="nombre"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="clima"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="temperatura"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="humedad"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="viento"></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--AQUI EL GMAIL Y EL FORM-->
+        <section class="info-contacto">
+            <h2 class="titulo">Contáctanos</h2>
+
+            <div class="contenedor2">
+                <div class="textos-contacto">
+                    <h2 id="escribanos">Envíanos un email !!</h2>
+                    <div class="correo-foto">
+                        <img src="img/email.png">
+                        <h2><a
+                                href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=birdapplication2020@gmail.com">birdapplication2020@gmail.com</a>
+                        </h2>
+                    </div>
+                </div>
+                <div class="container">
+                    <form>
+                        <label for="fname">Nombre Completo</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Su Nombre..">
+                        <label for="lname">Correo Electrónico</label>
+                        <input type="email" id="umail" name="lastname" placeholder="Su correo..">
+                        <input type="button" onclick="sendEmail()" value="Solicitar Información">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script>
+
+        </script>
+    </main>
+    <!--PIE DE PAGINA-->
+    <footer>
+        <h2>Parque Nacional Manuel Antonio</h2>
+        <br><br>
+
+        <div class="contenedor-footer">
+            <div class="texto_info">
+                <div class="content-fu">
+                    <h4>Teléfono</h4>
+                    <p>2777-5185</p>
+                </div>
+                <div class="content-fu">
+                    <h4>Email</h4>
+                    <p>birdapplication2020@gmail.com</p>
+                </div>
+                <div class="content-fu">
+                    <h4>Ubicación</h4>
+                    <p>Puntarenas | Costa Rica</p>
+                </div>
+            </div>
+            <div class="redes_logos">
+                <div class="content-fu">
+                    <SPAN title="Ir a su Website">
+                        <a href="http://www.sinac.go.cr/ES/ac/acopac/pnma/Paginas/default.aspx">
+                            <img src="img/global.png"></a></SPAN>
+                </div>
+                <div class="content-fu">
+                    <SPAN title="Ir a su Instagram">
+                        <a href="https://www.instagram.com/parquemanuelantonio/">
+                            <img src="img/instagram.png"></a></SPAN>
+                </div>
+                <div class="content-fu">
+                    <SPAN title="Ir a su Facebook">
+                        <a href="https://www.facebook.com/parquemanuelantoniocr">
+                            <img src="img/facebook.png"></a></SPAN>
+                </div>
+                <div class="content-fu">
+                    <SPAN title="Ir a Maps">
+                        <a
+                            href="https://www.google.com/maps/place/Parque+Nacional+Manuel+Antonio/@9.392308,-84.1391766,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa1719c9ba9f54b:0x95e66139ce5c4a86!8m2!3d9.392308!4d-84.1369879?hl=es">
+                            <img src="img/google-maps.png"></a></SPAN>
+                </div>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy;KenethMC | Keneth Miranda Chaves | Todos los derechos Reservados</h2>
+    </footer>
+</body>
+
+</html>

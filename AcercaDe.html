@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque Nacional Manuel Antonio</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2_EIWBAnNSwfTLwfRdoTku_ehYndXqRA&callback=initMap">
+    </script>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link href="EstiloAcercaDe.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="AcercaDe.html">Acerca de</a>
+            <a href="Galeria.html">Galería</a>
+            <a href="ContactoInfo.html">Contacto/Informacion</a>
+            <a href="Autor.html">Autor</a>
+        </nav>
+        <br>
+        <section class="textos-header">
+            <h1>Parque Nacional Manuel Antonio | Costa Rica</h1>
+            <h2>Un puente entre el Océano y la Tierra</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; 
+                width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Acerca del Parque</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/ManuelAntonio.jpg" alt="" class="imagen-sobre-nosotros">
+                <div class="contenido-textos">
+                    <p>El Parque Nacional Manuel Antonio es una área de conservación natural localizada en la costa
+                        pacífica central de Costa Rica,
+                        en el cantón de Quepos, provincia de Puntarenas.</p>
+
+                    <p>El parque está ubicado a unos 157 km al sur de la ciudad de San José capital de Costa Rica y
+                        7 km al sur de la ciudad de Quepos, entre Damas y Matapalo, fue establecido el 15 de noviembre
+                        de 1972 con una extensión de 1.983k en la parte terrestre y 55.000k en la parte marina,
+                        dedicados a la conservación, investigación y turismo
+                        ecológico orientado hacia la educación ambiental.</p>
+
+
+                    <p>Este parque cuenta con uno de los paisajes más impresionantes de Costa Rica y del mundo,
+                        cuenta varias ensenadas con múltiples playas de arenas blancas y exuberantes follajes en medio
+                        de grandes montañas y bosques que llegan hasta las playas, se encuentra en la zona de vida
+                        bosque húmedo tropical.
+                        es un lugar tan impresionante que fue seleccionado por la Revista Forbes en 2011 entre la lista
+                        de los 12 parques
+                        más bellos del mundo.</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="contenedor-acerca-de-2">
+                <div class="contenido-textos">
+                    <p>La región donde se localiza el Parque Nacional Manuel Antonio fue poblada por la
+                        comunidad indígena Quepoa, nombre que dio origen a la ciudad de Quepos.
+                        Con la llegada de los colonos, las tierras se convirtieron en área de cultivos que
+                        posteriormente fueron adquiridas por la United Fruit Company.</p>
+
+                    <p>No fue hasta en 1972,que por presión del pueblo costarricense, fue adquirido por el Estado,
+                        quedando
+                        bajo su protección y creándose el parque nacional bajo la Ley 5100.
+                        Actualmente es administrado por el Área de Conservación Pacífico Central (ACOPAC), del
+                        Sistema Nacional de Áreas de Conservación (SINAC), del Ministerio del Ambiente, Energía y
+                        Telecomunicaciones (MINAET).</p>
+                    <p>Con el establecimiento de este Parque, la gente de Costa Rica decidió
+                        preservar, para las generaciones futuras,
+                        una de las áreas más bellas y biodiversas del mundo. A pesar de que es el parque nacional más
+                        pequeño del país,
+                        la impresionante belleza y diversidad de la vida silvestre en sus 683 hectáreas es inigualable.
+                    </p>
+                </div>
+                <img src="img/historia4.jpg" alt="" class="imagen-sobre-nosotros">
+            </div>
+        </section>
+        <section class="clientes-contenedor">
+            <h2 class="titulo">Que opinan nuestros visitantes</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="img/face3.png" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Keneth Miranda (Costa Rica)</h4>
+                        <p>" Un lugar muy tuanis y muy representativo de Costa Rica, con una flora y fauna unica del
+                            lugar y una calma que se respira en todo lado."</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/face1.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Kenia Jhonson (Jamaica)</h4>
+                        <p>" Hermosa vibra y belleza de la zona y sus habitantes, el parque con un color verde único y
+                            sus playas hermosas, un verdadero tesoro."</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/face2.jpeg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Charlie Reed (España)</h4>
+                        <p>" Hermoso lugar, en mi ultimo viaje al Parque Nacional Manuel Antonio conocí playa Biezans,un
+                            pequeño paraíso escondido."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mapa-google">
+            <script>
+                let map;
+
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById("map"), {
+                        center: {
+                            lat: 9.390765,
+                            lng: -84.144987
+                        },
+                        zoom: 15,
+                    });
+                    var marker1 = new google.maps.Marker({
+                        position: {
+                            lat: 9.390765,
+                            lng: -84.144987
+                        },
+                        draggable: false
+                    });
+                    // Le asignamos el mapa a los marcadores.
+                    marker1.setMap(map);
+                }
+            </script>
+            <div id="map"></div>
+
+        </section>
+    </main>
+    <footer>
+        <h2>Parque Nacional Manuel Antonio</h2>
+        <br><br>
+
+        <div class="contenedor-footer">
+            <div class="texto_info">
+                <div class="content-fu">
+                    <h4>Teléfono</h4>
+                    <p>2777-5185</p>
+                </div>
+                <div class="content-fu">
+                    <h4>Email</h4>
+                    <p>birdapplication2020@gmail.com</p>
+                </div>
+                <div class="content-fu">
+                    <h4>Ubicación</h4>
+                    <p>Puntarenas | Costa Rica</p>
+                </div>
+            </div>
+            <div class="redes_logos">
+                <div class="content-fu">
+                    <SPAN title="Ir a su Website">
+                        <a href="http://www.sinac.go.cr/ES/ac/acopac/pnma/Paginas/default.aspx">
+                            <img src="img/global.png"></a></SPAN>
+                </div>
+                <div class="content-fu">
+                    <SPAN title="Ir a su Instagram">
+                        <a href="https://www.instagram.com/parquemanuelantonio/">
+                            <img src="img/instagram.png"></a></SPAN>
+                </div>
+                <div class="content-fu">
+                    <SPAN title="Ir a su Facebook">
+                        <a href="https://www.facebook.com/parquemanuelantoniocr">
+                            <img src="img/facebook.png"></a></SPAN>
+                </div>
+                <div class="content-fu">
+                    <SPAN title="Ir a Maps">
+                        <a
+                            href="https://www.google.com/maps/place/Parque+Nacional+Manuel+Antonio/@9.392308,-84.1391766,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa1719c9ba9f54b:0x95e66139ce5c4a86!8m2!3d9.392308!4d-84.1369879?hl=es">
+                            <img src="img/google-maps.png"></a></SPAN>
+                </div>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy;KenethMC | Keneth Miranda Chaves | Todos los derechos Reservados</h2>
+    </footer>
+</body>
+
+</html>
